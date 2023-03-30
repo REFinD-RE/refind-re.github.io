@@ -5,10 +5,10 @@
   <meta charset="utf-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>FinQA</title>
-  <meta name="description" content="FinQA is a large-scale dataset with 2.8k financial reports for 8k Q&A pairs annotated by finance experts.">
+  <title>REFinD</title>
+  <meta name="description" content="REFinD : Relation Extraction Financial Dataset">
   <meta name="keywords" content="Natural Language Processing">
-  <meta name="author" content="FinQA">
+  <meta name="author" content="REFinD">
 
   <link rel="icon" href="dist/pic/favicon.ico">
 
@@ -20,7 +20,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="index.html"><b>F<font size="2rem">IN</font>QA</font></b></a>
+    <a class="navbar-brand" href="index.html"><b>REF<font size="2rem">IN</font>D</b></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#content" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -34,22 +34,7 @@
           <a class="nav-link" href="about.html">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="explore.html">Explore</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="challenge.html">Challenge</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://arxiv.org/abs/2109.00122" target="_blank">Paper</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://codalab.lisn.upsaclay.fr/competitions/1846" target="_blank">Public Test Leaderboard</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://codalab.lisn.upsaclay.fr/competitions/4138" target="_blank">Private Test Leaderboard</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="mailto:zhiyuchen@cs.ucsb.edu">Contact</a>
+          <a class="nav-link" href="cfp.html">Shared Task</a>
         </li>
       </ul>
     </div>
@@ -58,11 +43,12 @@
 
 <div class="jumbotron">
   <div class="container">
-    <h1 class="display-5 ucsb-blue">Meet F<font size="5rem">IN</font>QA!</h1>
-    <p class="lead ucsb-blue">A large-scale dataset with 2.8k financial reports for 8k Q&A pairs to study numerical reasoning with structured and unstructured evidence.</p>
+    <h1 class="display-5 ucsb-blue">Meet REF<font size="5rem">IN</font>D - Relation Extraction Financial Dataset</h1>
+    <p class="lead ucsb-blue">REFinD (pronounced "refined") is the biggest financial-domain relation-extraction dataset with 29k instances. </p>
   </div>
 </div>
 
+<!--
 <div class="container" align="justify">
   <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
@@ -123,6 +109,7 @@
   </div>
 </div>
 
+
 <div class="container" align="justify">
   <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
@@ -132,50 +119,34 @@
   </div>
   <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
-      <h6> We have designed an interface for you to view the data, please click <u><a href="https://finqasite.github.io/explore.html">here</a></u> to explore the dataset and have fun! </h6>
+      <h6> The REFinD dataset is the first domain specific financial relation-extraction dataset built using raw text from various 10-X (10-K, 10-Q, etc. broadly known as 10-X) reports of publicly traded companies that were obtained from US Securities and Exchange Commission (<a href="https://www.sec.gov/edgar.shtml">SEC</a>) website. An example instance from the dataset is shown below. </h6>
     </div>
   </div>
 </div>
 <br/>
 
+-->
+
 <div class="container" align="justify">
   <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
-      <h4>Example</h4>
+      <h4>Explore</h4>
       <hr>
     </div>
   </div>
   <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
-      <h6> In the task, you are given a financial report containing both text and table, the goal is to answer a question requiring numerical reasoning. An example is shown below:</h6>
+      <h6> The REFinD dataset is the first domain specific financial relation-extraction dataset built using raw text from various 10-X (10-K, 10-Q, etc. broadly known as 10-X) reports of publicly traded companies that were obtained from US Securities and Exchange Commission (<a href="https://www.sec.gov/edgar.shtml">SEC</a>) website. An example instance from the dataset is shown below :</h6>
     </div>
   </div>
   <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
-      <img src="dist/pic/eg-intro.png" class="rounded img-fluid mx-auto d-block" style="width:70%;" />
+      <img src="dist/pic/intro.png" class="rounded img-fluid mx-auto d-block" style="width:70%;" />
     </div>
   </div>
 </div>
 
 <br>
-
-<div class="container" align="justify">
-  <div class="row">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
-      <h4>Download (Train/Test Data, Code)</h4>
-      <hr>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
-      <h6> All the code and data are provided in <a href="https://github.com/czyssrs/FinQA"> <u>github</u></a>. 
-        The leaderboard for the public test set is hosted <a href="https://codalab.lisn.upsaclay.fr/competitions/1846"><u>here</u></a>. 
-        The leaderboard for the private test set is hosted <a href="https://codalab.lisn.upsaclay.fr/competitions/4138"><u>here</u></a></h6>
-    </div>
-  </div>
-</div>
-
-<br/>
 
 <div class="container" align="justify">
   <div class="row">
@@ -186,12 +157,44 @@
   </div>
   <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
-      <h6> The basic statistics, the distribution of supporting fact sources, and the distribution of program steps of FinQA are as follows:  </h6>
+      <h6> REFinD is largest financial domain annotated dataset of relations, with 29K instances and 22 relations amongst 8 types of entity pairs, generated entirely over financial documents. The figure below shows the 22 relations between 8 entity types. This dataset, although built on financial reports and highlighting financial-domain specific challenges, can also be leveraged by other domains such as legal, risk modeling, and econometrics.  </h6>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+      <img src="dist/pic/RelationGroups.png" class="rounded img-fluid mx-auto d-block" style="width:30%;" />
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+      <h6> REFinD contains much longer sentences than TACRED wherein the average sentence length in TACRED dataset is 36.2 whereas REFinD is 53.7. The distribution of sentence length when compared to TACRED is shown below.  </h6>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+      <img src="dist/pic/sentlendist.png" class="rounded img-fluid mx-auto d-block" style="width:50%;" />
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<div class="container" align="justify">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+      <h4>Download (Train/Test Data, Code)</h4>
+      <hr>
     </div>
   </div>
   <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
-      <img src="dist/pic/website-stat.png" class="rounded img-fluid mx-auto d-block" style="width:70%;" />
+      <h6>Dataset download information coming soon.</h6>
+      <!--<h6> All the code and data are provided in <a href="https://github.com/czyssrs/FinQA"> <u>github</u></a>. 
+        The leaderboard for the public test set is hosted <a href="https://codalab.lisn.upsaclay.fr/competitions/1846"><u>here</u></a>. 
+        The leaderboard for the private test set is hosted <a href="https://codalab.lisn.upsaclay.fr/competitions/4138"><u>here</u></a></h6>-->
     </div>
   </div>
 </div>
@@ -207,14 +210,15 @@
   </div>
 
   <div class="row">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+    <!--<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
       <a href="https://arxiv.org/abs/2109.00122" target="_blank">
         <img src="dist/pic/all-paper.png" class="rounded img-fluid mx-auto d-block" border="5"/>
       </a>
-    </div>
+    </div>-->
 
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
-      <h6>Please cite our paper as below if you use the FinQA dataset.</h6>
+      <h6>Paper currently under submission. More details coming soon.</h6>
+      <!--<h6>Please cite our paper as below if you use the FinQA dataset.</h6>
       <pre><code>
         @inproceedings{chen2021finqa,
           title={FinQA: A Dataset of Numerical Reasoning over Financial Data},
@@ -224,13 +228,13 @@
           year={2021}
         }
       </code></pre>
-      </details>
+      </details>-->
     </div>
   </div>
 
 </div>
 
-<div class="container" align="justify">
+<!--<div class="container" align="justify">
   <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
         <h4>Acknowledgement</h4>
@@ -241,7 +245,7 @@
     We sincerely acknowledge Nancy Wang and Peter Zhong for releasing their <a href="https://developer.ibm.com/exchanges/data/all/fintabnet/">FinTabNet dataset</a>. 
     </div>
 
-</div>
+</div>-->
 
 <br/>
 
@@ -269,6 +273,7 @@
 
 <hr>
 
+<!--
 <div class="container footer">
   <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 thumb">
@@ -290,6 +295,7 @@
   </div>
 </div>
 </body>
+-->
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>

@@ -1,2 +1,2 @@
-# finqasite.github.io
-The official page for FinQA dataset from UCSB NLP group.
+# refind-re.github.io
+The official page for REFinD dataset and Shared Task.
